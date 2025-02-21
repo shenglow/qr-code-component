@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --font-family: "Outfit", serif;
+  --font-normal: 400;
+  --font-bold: 700;
+  --font-body1: 22px;
+  --font-body2: 15px;
+  --spacing: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 40px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--slate-300);
+}
+
+.card {
+  width: 320px;
+  padding: var(--spacing);
+  padding-bottom: var(--spacing-xl);
+  border-radius: 20px;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card .description {
+  margin-top: var(--spacing-l);
+  padding: 0 var(--spacing);
+  text-align: center;
+}
+.card h1 {
+  margin-bottom: var(--spacing);
+  font-size: var(--font-body1);
+  font-weight: var(--font-bold);
+  color: var(--slate-900);
+}
+.card p {
+  font-size: var(--font-body2);
+  font-weight: var(--font-normal);
+  color: var(--slate-500);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: var(--spacing);
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
